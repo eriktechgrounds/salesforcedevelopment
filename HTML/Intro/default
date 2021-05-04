@@ -80,3 +80,45 @@ Heading 1</h1>
 <h5>Heading 5</h5>
 <br>
 <h6>Heading 6</h6>
+
+13. Een paragraaf <p> tag word gebruikt om een groepering van inhoud aan te geven. Dit kan een stuk tekst zijn, zoals het woord 
+paragraaf in de algemene spreektaal gebruikt wordt; in HTML kan dit echter ook gaan om bijvoorbeeld een groepering afbeeldingen
+of de items van een quiz. 
+
+Voorbeeld:
+<h3>Verschillende boomsoorten</h3>
+<br><p>
+<img src="lindeboom.jpg" alt="Afbeelding van een lindeboom">
+<br>
+<img src="denneboom.jpg" alt="Afbeelding van een denneboom">
+<br>
+<img src="berkenboom.jpg" alt="Afbeelding van een berkenboom">
+</p>
+
+14. Alle tekst binnen een paragraaf tag kan wanneer het een korte tekst betreft, van bijv. enkele zinnen. Wanneer het echter een 
+langer verhaal wordt, met bijv. sub-onderwerpen is het voor de leesbaarheid (oa. van zoekmachines en hulpmiddelen) aan te raden 
+deze op te delen met meerdere paragraaf-tags.
+
+15./16./17.
+<h1>Mijn eerste website</h1>
+<br>
+<h2>Mijn eerste subkop</h2>
+<br>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+</p><br>
+<h2>Mijn tweede sub-kop</h2>
+<br><p>
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae 
+ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+<br><p>
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione 
+voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia 
+non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
+<br>
+ <hr>
+<br>
+<h5>Footer</h5>
+<br>
+<p>Deze website is gebouwd vanuit de <a href="http://www.techgrounds.nl" target="_blank">Techgrounds Academy</a>
+</p>
