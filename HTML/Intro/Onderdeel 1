@@ -1,0 +1,130 @@
+1. Het internet is het onderliggende netwerk, dus alle internationaal met elkaar verbonden systemen; oa. voor e-mail, ftp, online-gaming, websites, nieuwsgroepen, etc etc.
+Het World Wide Web, eg. websites, maakt hier onderdeel van uit.
+
+
+2. Met HTML word de structuur van een website bepaald, CSS gaat over de visuele invulling en JavaScript over de onderliggende datastromen. 
+Metaforisch zou je HTML als het skelet kunnen zien, CSS het uiterlijk en JavaScript de lichaamsprocessen. 
+
+3. HTML tags zijn de indicatoren voor het openen en sluiten van een element. Een element bestaat uit de openingstag
+ (eventueel met attributen die eigenschappen van het element bepalen) en sluitingstag, met daartussenin de inhoud. Uitzondering hier 
+ is de zelf-sluitende tag, deze heeft zoals de naam al zegt geen sluitingstag.
+
+Bijvoorbeeld: 
+Een openingstag: <h1>
+Een sluitingstag: </h1>
+Het element H1: <h1>Hallo Wereld</h1>
+
+4. De <html> tag geeft aan dat het een HTML bestand betreft, zodat browsers en dergelijke een bestand als zodanig kunnen herkennen.
+Alle HTML code moet tussen de twee HTML tags geplaatst.
+De <head> tags omsluiten de metadata over de website; oa de titel en eventueel enige steekwoorden. De inhoud is onzichtbaar op de website
+zelf, maar word bijvoorbeeld in de titelbalk getoond, zorgt ervoor dat zoekmachines een website goed kunnen catagoriseren en biedt waardevolle
+informatie voor mensen die toegankelijkheidshulpmiddelen gebruiken.
+Alles tussen de <body> tags gaat over de eigenlijke, visueel weergegeven structuur en inhoud van de website.
+
+5. Attributen kunnen gebruikt worden om de eigenschappen van een element aan te passen. Ze worden, gescheiden met een spatie, 
+binnen de openings-tag geplaatst.
+Enkele voorbeelden zijn:
+Het href attribuut, om het doel van een link aan te geven: <a href="https://devnull.com">Hallo ik ben een link</a>
+Het alt attribuut, om een beschrijving (alternative text) te geven van een element: <img src="image.jpg" alt="Afbeelding van een bloementuin">
+Het class attribuut, om een element in een specifieke klasse in te delen, zodat deze gemakkelijk via een stylesheet of embedded CSS kan worden
+aangesproken: <p class="paragraaf1">Tekst van paragraaf 1</p>
+De height en width attributen, om de afmetingen van een element in te stellen: <img src="image.jpg" width="400px" height="250px" alt="Afbeelding van een bloementuin">
+Het align attribuut, om een element uit te lijnen naar een bepaalde richting: <p align="center">Ik sta in 't midden!</p>
+
+6. Een goede HTML structuur is belangrijk zodat deze gelezen kan worden. Door mensen, in het geval je samenwerkt aan een website,
+of iemand na jouw het onderhoud van een website moet kunnen overnemen - en door software. Denk bij dat laatste aan browsers, zoekmachines en 
+gespecialiseerde software om een website toegankelijk te maken voor mensen met een beperking. 
+De genoemde code heeft -technisch- een correcte structuur, in de zin dat alle noodzakelijke HTML elementen erin zitten.
+Omdat er geen line-breaks of verdere opmaak in de weergegeven tekst is toegepast, is deze voor mensen echter erg onplezierig om te lezen en als zodanig
+niet geschikt.
+
+7. Een block-element neemt per definitie de hele breedte van een website in beslag, deze kunnen dus niet naast elkaar toegepast worden.
+Een inline-element kan een beperktere ruimte innemen, en heeft dus wel de mogelijkheid naast elkaar toe te passen.
+
+8. Nesting is het toepassen van een element binnen een ander element. Het binnenste ("nested") element neemt nu eventuele eigenschappen/attributes
+van het buitenste element over, tenzij die voor het nested element apart zijn opgegeven.
+
+Een voorbeeld van nesting is bijvoorbeeld: <p>Deze tekst is <em>belangrijk</em></p>
+
+9. HTML semantics houdt oa. in dat tags overeenkomstig met hun ontworpen gebruik toegepast worden, en (dus) uit de opmaak van de structuur
+duidelijk wordt wat de inhoud/functie van een element is. Zo kan de code dus niet alleen door een computer (visueel) weergegeven worden,
+maar kan deze ook worden gelezen door andere systemen; zoals zoekmachines/indexeerders en hulpmiddelen voor mensen met een beperking.
+
+10. Binnen een <header> kan het beste een introducerende text geplaatst worden, en/of een banner (kopafbeelding)
+Een <footer> element bevat de voettekst van een website. Bijvoorbeeld copyright-informatie, wie een tekst geschreven heeft of links naar
+verdere informatie.
+Bij een <main> element gaat dit over de belangrijktste informatie of functionaliteit die een pagina wil weergeven, het " hoofdonderdeel".
+Het <nav> element wordt gebruikt om het deel van een pagina met navigatielinks weer te geven, zowel links binnen een document (anchors) als daarbuiten. 
+Een <section> element omvat een onderdeel van een pagina die niet op een specifiekere manier aan te duiden is. Deze moeten, bijna zonder
+uitzondering, een header element bevatten - om de inhoud tenminste met een titel verder te duiden.
+De <aside> tags worden gebruikt om informatie te omvatten die maar zijdelings gerelateerd is aan de hoofdtekst. Vaak worden deze gebruikt
+om in een aparte box of zijbalk iets dieper op iets in te gaan en/of iets toe te lichten.
+De inhoud van een <article> element, betreft onafhankelijke, op zichzelf staande informatie dwz. deze informatie moet los van de rest, 
+dus bijv. als eigen onderdeel van een een RSS-feed, duidelijk zijn. Zoals een nieuwsbericht, een forum- of blogpost. 
+
+11. Een header is belangrijk omdat deze de belangrijkste inhoud van je website beschrijft. Dit is dus belangrijk voor zowel zoekmachines,
+zodat deze je website op basis ervan kunnen rubriceren en vindbaar maken -- als ook voor gebruikers; gebruikers die kunnen lezen kunnen
+zo in een oogopslag zien waar de website over gaat, en hulpmiddelen voor gebruikers met een beperking kunnen zo de inhoud duidelijk aan hen
+doorgeven.
+
+12. <h1>Headings opdrachten
+<br>
+Heading 1</h1>
+<br>
+<h2>Heading 2</h2>
+<br>
+<h3>Heading 3</h3>
+<br>
+<h4>Heading 4</h4>
+<br>
+<h5>Heading 5</h5>
+<br>
+<h6>Heading 6</h6>
+
+13. Een paragraaf <p> tag word gebruikt om een groepering van inhoud aan te geven. Dit kan een stuk tekst zijn, zoals het woord 
+paragraaf in de algemene spreektaal gebruikt wordt; in HTML kan dit echter ook gaan om bijvoorbeeld een groepering afbeeldingen
+of de items van een quiz. 
+
+Voorbeeld:
+<h3>Verschillende boomsoorten</h3>
+<br><p>
+<img src="lindeboom.jpg" alt="Afbeelding van een lindeboom">
+<br>
+<img src="denneboom.jpg" alt="Afbeelding van een denneboom">
+<br>
+<img src="berkenboom.jpg" alt="Afbeelding van een berkenboom">
+</p>
+
+14. Alle tekst binnen een paragraaf tag kan wanneer het een korte tekst betreft, van bijv. enkele zinnen. Wanneer het echter een 
+langer verhaal wordt, met bijv. sub-onderwerpen is het voor de leesbaarheid (oa. van zoekmachines en hulpmiddelen) aan te raden 
+deze op te delen met meerdere paragraaf-tags.
+
+15./16./17.
+<h1>Mijn eerste website</h1>
+<br>
+<h2>Mijn eerste subkop</h2>
+<br>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+</p><br>
+<h2>Mijn tweede sub-kop</h2>
+<br><p>
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae 
+ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+<br><p>
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione 
+voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia 
+non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
+<br>
+ <hr>
+<br>
+<h5>Footer</h5>
+<br>
+<p>Deze website is gebouwd vanuit de <a href="http://www.techgrounds.nl" target="_blank">Techgrounds Academy</a>
+</p>
+
+18. Een HTML link-tag kan dmv. de volgende attributes nader gespecificeerd worden: 
+download - hiermee wordt de browser verteld het doel van de link te downloaden ipv. openen, bijv. <a href="https://www.example.com/document.pdf" download>Download PDF</a>
+hreflang - deze geeft aan in welke taal het doel van de link is, bijv. voor een site in het Spaans: <a href="https://es.wikipedia.org/wiki/Flamenco" hreflang="es">Wikipedia Flamenco</a>
+target - geeft aan in welke context een link geopend zal worden, bijv. _blank om in een nieuw tab of scherm te openen: <a href="https://www.example.com" target="_blank">Voorbeeld website</a>
+title - geeft de titel van een link aan, deze word weergegeven wanneer de gebruiker er met de muis boven hangt, bijv. <a href="https://www.example.com" title="Voorbeeldige website">Voorbeeldige website</a>
