@@ -1,0 +1,14 @@
+1.         <form>
+                <label for="anaam">Achternaam:</label>
+                <input type="text" id="anaam" name="anaam" placeholder="achternaam"><br>
+                <label for="vnaam">Voornaam:</label>
+                <input type="text" id="vnaam" name="vnaam" placeholder="voornaam">
+            </form> 
+
+2. Voorbeelden van enkele andere input-types: 
+
+<div>
+  <input type="radio" id="radio" name="box" value="radio">
+  <label for="radio">Radio</label>
+</div>
+
