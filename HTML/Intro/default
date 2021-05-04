@@ -24,7 +24,7 @@ Alles tussen de <body> tags gaat over de eigenlijke, visueel weergegeven structu
 5. Attributen kunnen gebruikt worden om de eigenschappen van een element aan te passen. Ze worden, gescheiden met een spatie, 
 binnen de openings-tag geplaatst.
 Enkele voorbeelden zijn:
-Het href attribuut, om het doel van een link aan te geven: <a href="https://devnull.com"></a>
+Het href attribuut, om het doel van een link aan te geven: <a href="https://devnull.com">Hallo ik ben een link</a>
 Het alt attribuut, om een beschrijving (alternative text) te geven van een element: <img src="image.jpg" alt="Afbeelding van een bloementuin">
 Het class attribuut, om een element in een specifieke klasse in te delen, zodat deze gemakkelijk via een stylesheet of embedded CSS kan worden
 aangesproken: <p class="paragraaf1">Tekst van paragraaf 1</p>
@@ -124,7 +124,7 @@ non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaera
 </p>
 
 18. Een HTML link-tag kan dmv. de volgende attributes nader gespecificeerd worden: 
-download - hiermee wordt de browser verteld het doel van de link te downloaden ipv. openen, bijv. <a href="https://www.example.com/document.pdf" download>
-hreflang - deze geeft aan in welke taal het doel van de link is, bijv. voor een site in het Spaans: <a href="https://es.wikipedia.org/wiki/Flamenco" hreflang="es">
-target - geeft aan in welke context een link geopend zal worden, bijv. _blank om in een nieuw tab of scherm te openen: <a href="https://www.example.com" target="_blank"> 
-title - geeft de titel van een link aan, deze word weergegeven wanneer de gebruiker er met de muis boven hangt, bijv. <a href="https://www.example.com" title="Voorbeeldige website">
+download - hiermee wordt de browser verteld het doel van de link te downloaden ipv. openen, bijv. <a href="https://www.example.com/document.pdf" download>Download PDF</a>
+hreflang - deze geeft aan in welke taal het doel van de link is, bijv. voor een site in het Spaans: <a href="https://es.wikipedia.org/wiki/Flamenco" hreflang="es">Wikipedia Flamenco</a>
+target - geeft aan in welke context een link geopend zal worden, bijv. _blank om in een nieuw tab of scherm te openen: <a href="https://www.example.com" target="_blank">Voorbeeld website</a>
+title - geeft de titel van een link aan, deze word weergegeven wanneer de gebruiker er met de muis boven hangt, bijv. <a href="https://www.example.com" title="Voorbeeldige website">Voorbeeldige website</a>
