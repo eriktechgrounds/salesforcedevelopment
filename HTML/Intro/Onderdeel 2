@@ -1,0 +1,129 @@
+1. Een absolute path houdt in dat het volledige doel-adres wordt aangegeven.
+Bij een relative path wordt de website/map waarin het HTML bestand zit als uitgangspunt, "springplank" genomen, 
+en verwijst dus vanaf daar verder.
+
+2. Andere op het gangbare afbeeldingsformaten voor in de browser zijn: PNG, GIF, SVF, APNG, AVIF, WEBP
+Verder zijn er nog formaten zoals BMP en TIFF, hier van wordt omwille de slechte compressie echter afgeraden ze op het web te gebruiken.
+
+3. Enkele veel gebruikte browsers zijn: Google Chrome, Mozilla Firefox, Safari (Apple) en Microsoft Edge
+Verder zijn er nog wat kleinere spelers zoals bijvoorbeeld: Brave, Opera, Vivaldi en Midori
+
+4. Bijvoorbeeld: 
+<img src="https://www.mysite.com/images/banner.jpg">
+en
+<img src="/images/banner.jpg">
+
+5. De alt-attribute kan tekst bevatten die word weergeven op het moment dat de gebruiker met de muiscursor boven een afbeelding hangt,
+alsook wanneer een afbeelding niet geladen kan worden. Dit betreft meestal een beschrijving van de inhoud van de afbeelding. Zo kan de 
+afbeelding ook begrepen worden door screenreaders, zoekmachines en andere hulpmiddelen.
+
+6. / 7.
+<audio controls loop>
+  <source src="/sound/explosions.ogg" type="audio/mpeg">
+  <source src="/sound/explosions.mp3" type="audio/ogg">
+  Sorry, your browser does not support the audio element.
+</audio> 
+
+Door het gebruik van de source tag kunnen er meerdere formaten van een audio/video bestand aan de browser aangeboden worden, waardoor
+deze kan kiezen welke het beste ondersteund word/de voorkeur heeft.
+
+
+8. <video controls width="400">
+     <source src="/media/flower.webm"
+            type="video/webm">
+     <source src="/media/flower.mp4"
+            type="video/mp4">
+     Sorry, your browser doesn't support embedded videos.
+</video>
+
+Door het gebruik van de source tag kunnen er meerdere formaten van een audio/video bestand aan de browser aangeboden worden, waardoor
+deze kan kiezen welke het beste ondersteund word/de voorkeur heeft.
+
+9.              <ol>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                </ol>
+                <ol>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                        <ol>
+                        <li>sub item 1</li>
+                        <li>sub item 2</li>
+                        </ol>
+                <li>Item 3</li>
+                </ol>
+                <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                </ul>
+                <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                        <ul>
+                        <li>sub item 1</li>
+                        <li>sub item 2</li>
+                        </ul>
+                <li>Item 3</li>
+                </ul>
+
+
+10.       <ul>
+                <li><a href="#tigers">Tigers</a></li>
+                <li><a href="#lions">Lions</a></li>
+                <li><a href="#monkeys">Monkeys</a></li>
+                <li><a href="#hippopotamus">Hippopotamus</a></li>
+                </ul>
+                <h1 id="tigers">Tigers</h1>
+                <br>
+                <p>
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti 
+                atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt 
+                in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est 
+                et expedita distinctio.
+                </p>
+                <br>
+                <h1 id="lions">Lions</h1>
+                <br>
+                <p>
+                Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus 
+                id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem
+                 quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et
+                  molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus 
+                  maiores alias consequatur aut perferendis doloribus asperiores repellat.  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti 
+                  atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt 
+                  in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est 
+                  et expedita distinctio.
+                </p>
+                <h1 id="monkeys">Monkeys</h1>
+                <br>
+                <p>
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti 
+                atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt 
+                in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est 
+                et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus 
+                id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem
+                 quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et
+                  molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus 
+                  maiores alias consequatur aut perferendis doloribus asperiores repellat.  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti 
+                  atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt 
+                  in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est 
+                  et expedita distinctio.
+                </p>
+                <br>
+                <h1 id="hippopotamus">Hippopotamus</h1>
+                <br>
+                <p>
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti 
+                atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt 
+                in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est 
+                et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus 
+                id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem
+                 quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et
+                  molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus 
+                  maiores alias consequatur aut perferendis doloribus asperiores repellat.  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti 
+                  atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt 
+                  in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est 
+                  et expedita distinctio.</p>
+            
