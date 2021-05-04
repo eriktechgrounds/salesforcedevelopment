@@ -17,7 +17,7 @@ en
 alsook wanneer een afbeelding niet geladen kan worden. Dit betreft meestal een beschrijving van de inhoud van de afbeelding. Zo kan de 
 afbeelding ook begrepen worden door screenreaders, zoekmachines en andere hulpmiddelen.
 
-6. / 7.
+6. en 7.
 <audio controls loop>
   <source src="/sound/explosions.ogg" type="audio/mpeg">
   <source src="/sound/explosions.mp3" type="audio/ogg">
