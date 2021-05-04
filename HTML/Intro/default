@@ -118,10 +118,7 @@ non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaera
 <br>
  <hr>
 <br>
-<h5>Footer</h5>_self - Default. Opens the document in the same window/tab as it was clicked
-_blank - Opens the document in a new window or tab
-_parent - Opens the document in the parent frame
-_top 
+<h5>Footer</h5>
 <br>
 <p>Deze website is gebouwd vanuit de <a href="http://www.techgrounds.nl" target="_blank">Techgrounds Academy</a>
 </p>
