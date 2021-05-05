@@ -101,7 +101,7 @@
         <input type="checkbox" id="check" name="check"><label for=check>Ik ga akkoord met de algemene voorwaarden</label>
     </fieldset>
     <input type="submit">
-</form>>
+</form>
 
 
 
