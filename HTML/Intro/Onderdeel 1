@@ -125,7 +125,11 @@ non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaera
 </p>
 
 18. Een HTML link-tag kan dmv. de volgende attributes nader gespecificeerd worden: 
-download - hiermee wordt de browser verteld het doel van de link te downloaden ipv. openen, bijv. <a href="https://www.example.com/document.pdf" download>Download PDF</a>
-hreflang - deze geeft aan in welke taal het doel van de link is, bijv. voor een site in het Spaans: <a href="https://es.wikipedia.org/wiki/Flamenco" hreflang="es">Wikipedia Flamenco</a>
-target - geeft aan in welke context een link geopend zal worden, bijv. _blank om in een nieuw tab of scherm te openen: <a href="https://www.example.com" target="_blank">Voorbeeld website</a>
-title - geeft de titel van een link aan, deze word weergegeven wanneer de gebruiker er met de muis boven hangt, bijv. <a href="https://www.example.com" title="Voorbeeldige website">Voorbeeldige website</a>
+download - hiermee wordt de browser verteld het doel van de link te downloaden ipv. openen, bijv. 
+<a href="https://www.example.com/document.pdf" download>Download PDF</a>
+hreflang - deze geeft aan in welke taal het doel van de link is, bijv. voor een site in het Spaans:
+ <a href="https://es.wikipedia.org/wiki/Flamenco" hreflang="es">Wikipedia Flamenco</a>
+target - geeft aan in welke context een link geopend zal worden, bijv. _blank om in een nieuw tab of scherm te openen:
+ <a href="https://www.example.com" target="_blank">Voorbeeld website</a>
+title - geeft de titel van een link aan, deze word weergegeven wanneer de gebruiker er met de muis boven hangt, bijv.
+ <a href="https://www.example.com" title="Voorbeeldige website">Voorbeeldige website</a>
