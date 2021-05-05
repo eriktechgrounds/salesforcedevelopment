@@ -153,4 +153,13 @@
 
 
 
-        
+10. <table> Dit is het parent element van een tabel, en is dus een eerste vereiste.
+    <thead> Word gebruikt om de header (kop) inhoud mee te groeperen
+    <tbody> Word gebruikt om de body (centrale inhoud) mee te groeperen
+    <tfoot> Word gebruikt om de footer (voettekst, in een tabel vaak een product) mee te groeperen
+    <th> Word gebruikt om de onderdelen van de header mee aan te duiden
+    <tr> Word gebruikt om een rij in de tabel mee te groeperen
+    <td> Word gebruikt om de inhoud van een cel aan te duiden
+
+
+11. 
