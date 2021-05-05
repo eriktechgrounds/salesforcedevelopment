@@ -54,9 +54,9 @@
                     <label for="gdatum">Geboortedatum</label>
                     <input type="date" id="gdatum" name="gdatum"><br><br>
                     <label for="man">M:</label>
-                    <input type="radio" id="man" name="man" value="man">
+                    <input type="radio" id="man" name="gender" value="man">
                     <label for="vrouw">V:</label>
-                    <input type="radio" id="vrouw" name="vrouw" value="vrouw"><br><br>
+                    <input type="radio" id="vrouw" name="gender" value="vrouw"><br><br>
                     <label for="pcode">Postcode:</label>
                     <input type="text" id="pcode" name="pcode" placeholder="postcode"><br><br>
                     <label for="adres">Adres:
@@ -122,3 +122,35 @@
     </fieldset>
     <input type="submit">
 </form>
+
+
+9.         <form>
+            <fieldset>
+                <legend>Aanmelding gratis Mijn Krant</legend>
+                <br><br>
+                <label for="anaam">Achternaam:</label>
+                <input type="text" id="anaam" name="anaam" placeholder="achternaam"><br>
+                <label for="vnaam">Voornaam:</label>
+                <input type="text" id="vnaam" name="vnaam" placeholder="voornaam"><br><br><br>
+                Welke digi-krant wilt u ontvangen?<br><br>
+
+                <input type="radio" id="ad" name="krant">
+                <label for="ad">Algemeen Dagblad</label><br>
+                <input type="radio" id="nrc" name="krant">
+                <label for="nrc">NRC Handelsblad</label><br>
+                <input type="radio" id="trouw" name="krant">
+                <label for="trouw">Trouw</label><br><br>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="email"> <br><br>
+                <label for="wwoord">Wachtwoord</label>
+                <input type="password" id="wwoord" name="wachtwoord"><br><br><br>
+                <input type="checkbox" id="nieuws" name="nieuws"><label for=nieuws>Ja, ik wil dagelijks de nieuwsbrief ontvangen</label><br>
+                <input type="checkbox" id="check" name="check"><label for=check>Ja, ik ga akkoord met de algemene voorwaarden</label>
+            </fieldset>
+            <input type="submit">
+        </form>
+
+
+
+
+        
