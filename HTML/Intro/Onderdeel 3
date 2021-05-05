@@ -285,3 +285,38 @@
         <td>55</td>
     </tr>
 </table>
+
+
+14. <table>
+    <thead>
+        <tr>
+            <br>
+            <th colspan=2><h3>Rondetijden 2021 seizoen 1</h3></th>
+        </tr>
+        <th>Sessie 1</th>
+        <th>Sessie 2</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>187sec</td>
+            <td>192sec</td>
+        </tr>
+        <tr>
+            <td>180sec</td>
+            <td>186sec</td>
+        </tr>
+        <tr>
+            <td>179sec</td>
+            <td>181sec</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td rowspan="2">Totaal<br><em>546sec</em></td>
+        </tr>
+        <tr>
+            <td rowspan="2">Totaal<br><em>559sec</em></td>
+        </tr>
+    </tfoot>
+
+</table>
