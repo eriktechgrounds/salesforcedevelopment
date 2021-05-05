@@ -162,4 +162,130 @@
     <td> Word gebruikt om de inhoud van een cel aan te duiden
 
 
-11. 
+11.         <table>
+            <thead>
+                <tr>
+                <th>Voornaam</th>
+                <th>Achternaam</th>
+                <th>Leeftijd</th>
+                <th>Telefoonnr</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>41</td>
+                    <td>+31 12345678</td>
+                </tr>
+                <tr>
+                <td>Steven</td>
+                <td>Smith</td>
+                <td>32</td>
+                <td>+31 12345678</td>
+                </tr>
+                <tr>
+                    <td>Alexander</td>
+                    <td>Beave</td>
+                    <td>16</td>
+                    <td>+31 12345678</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+12.         <table>
+            <thead>
+            <tr>
+                <th>MA</th>
+                <th>DI</th>
+                <th>WO</th>
+                <th>DO</th>
+                <th>VR</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Afspraak met tandarts</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Sporten</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Huiswerk maken</td>
+                    <td>Werken</td>
+                    <td>Werken</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Afspraak met tandarts</td>
+                    <td></td>
+                    <td></td>
+                    <td>Werken</td>
+                    <td>Bij Vrienden</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+13. <table>
+    <thead>
+        <tr>
+            <th></th>
+            <th>Sport</th>
+            <th>Aantal recreanten</th>
+            <th>Aantal competitie spelers</th>
+            <th>Totale deelnemers</th>
+        </tr>
+    </thead>
+    <tr>
+        <td></td>
+        <td>Badminton</td>
+        <td>10</td>
+        <td>30</td>
+        <td>40</td>
+    </tr>
+    <tr>
+    <td>Racket sport</td>
+    <td>Tafeltennis</td>
+    <td>59</td>
+    <td>30</td>
+    <td>40</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Tennis</td>
+        <td>159</td>
+        <td>130</td>
+        <td>189</td>
+    </tr>
+    <tr>
+        <td>Tennis&nbsp;&nbsp;&nbsp;159</td>
+        <td>130</td>
+        <td>189</td>
+    </tr>
+    <tr>
+    <td></td>
+    <td>Voetbal</td>
+    <td>88</td>
+    <td>40</td>
+    <td>128</td>
+    </tr>
+    <tr>
+        <td>Ball sport</td>
+        <td>Basketbal</td>
+        <td>60</td>
+        <td>40</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Volleybal</td>
+        <td>35</td>
+        <td>20</td>
+        <td>55</td>
+    </tr>
+</table>
