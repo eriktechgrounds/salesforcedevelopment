@@ -6,9 +6,119 @@
             </form> 
 
 2. Voorbeelden van enkele andere input-types: 
+        <form>
+        <input type="radio" id="radio" name="box" value="radio">
+        <label for="radio">Radio</label>
+        <br><br>
+        <input type="checkbox" id="checkbox" name="checkbox" value="checkbox">
+        <label for="checkbox">Checkbox</label>
+        <br><br>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+        <br><br>
+        <input type="reset">
+        <br><br>
+        <input type="submit">
+        <br><br>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date"> 
+        <br><br>
+        <label for="search">Search</label>
+        <input type="search" id="search" name="search">
+        <br><br>
+        <label for="time">Time</label>
+        <input type="time" id="time" name="time">
+         </form>
+        <br><br>
+        <form>
+        <input type="hidden" id="formVal" name="formVal" value="hidden_value">
+        <input type="submit">
+        <br><br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email"> 
+        </form>
 
-<div>
-  <input type="radio" id="radio" name="box" value="radio">
-  <label for="radio">Radio</label>
-</div>
 
+
+3.          <label for="email">Email</label>
+            <input type="email" id="email" name="email"> <input type="submit">
+
+
+4.             <form>
+                <fieldset>
+                    <legend>Persoons gegevens</legend><br>
+                    <label for="anaam">Achternaam:</label>
+                    <input type="text" id="anaam" name="anaam" placeholder="achternaam"><br><br>
+                    <label for="vnaam">Voornaam:</label>
+                    <input type="text" id="vnaam" name="vnaam" placeholder="voornaam"><br><br>
+                    <label for="gdatum">Geboortedatum</label>
+                    <input type="date" id="gdatum" name="gdatum"><br><br>
+                    <label for="man">M:</label>
+                    <input type="radio" id="man" name="man" value="man">
+                    <label for="vrouw">V:</label>
+                    <input type="radio" id="vrouw" name="vrouw" value="vrouw"><br><br>
+                    <label for="pcode">Postcode:</label>
+                    <input type="text" id="pcode" name="pcode" placeholder="postcode"><br><br>
+                    <label for="adres">Adres:
+                    <input type="text" id="adres" name="adres" placeholder="adres"><br><br>
+                    </label>
+                    </fieldset>
+                    <input type="submit"><input type="reset">
+            </form>
+
+
+5. <label for="fruitk">Kies een vrucht:</label>
+<select name="fruit" id="fruitk">
+<option value="appel">Appel</option>
+<option value="banaan">Banaan</option>
+<option value="clementine">Clementine</option>
+</select>
+
+
+6. Dropdown-list: Wanneer de lijst keuzes dermate lang is dat deze anders teveel schermruimte inneemt
+   Radio buttons: Bij een lijst van enkele keuzes, waarbij de keuze van een item de andere uitsluit
+   Checkbox: Bij een lijst van een of enkele keuze(s), waarbij het ook mogelijk kan zijn meerdere items te kiezen
+
+
+7. <form>
+    <fieldset>
+        <legend>Reserveringen</legend>
+        <br><br>
+        <label for="anaam">Achternaam:</label>
+        <input type="text" id="anaam" name="anaam" placeholder="achternaam"><br>
+        <label for="vnaam">Voornaam:</label>
+        <input type="text" id="vnaam" name="vnaam" placeholder="voornaam"><br><br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="email"> <br><br>
+        <label for="tafelt">Tafeltennis</label>
+        <input type="radio" id="tafelt" name="sport" value="tafeltennis"><br>
+        <label for="badmi">Badminton</label>
+        <input type="radio" id="badmi" name="sport" value="badminton"><br>
+        <label for="squa">Squash</label>
+        <input type="radio" id="squa" name="sport" value="squash"><br><br>
+        <label for="datumtijd">Gewenste datum/tijd:</label>
+        <input type="datetime-local" id="datumtijd" name="datumtijd"> <br><br>
+        <input type="checkbox" id="check" name="check"><label for=check>Ik ga akkoord met de algemene voorwaarden</label>
+    </fieldset>
+    <input type="submit">
+</form>>
+
+
+
+8. <form>
+    <fieldset>
+        <legend>Reserveer een boek</legend>
+        <br>
+        <label for="anaam">Achternaam:</label>
+        <input type="text" id="anaam" name="anaam" placeholder="achternaam"><br>
+        <label for="vnaam">Voornaam:</label>
+        <input type="text" id="vnaam" name="vnaam" placeholder="voornaam"><br><br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="email"> <br><br>
+        <label for="boektitel">Titel van het boek:</label>
+        <input type="text" id="boektitel" name="boektitel" placeholder="titel"><br><br>
+        <label for="hoeveelheid">Hoeveel boeken (tussen 1-5)</label>
+        <input type="number" id="hoeveelheid" name="hoeveelheid" min="1" max="5"> 
+    </fieldset>
+    <input type="submit">
+</form>
