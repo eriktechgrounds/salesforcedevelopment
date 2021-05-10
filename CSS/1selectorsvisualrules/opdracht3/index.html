@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <br><br>
+    Met een type selector worden alle elementen met eenzelfde node-naam, dus van hetzelfde type, geselecteerd. Bijv:
+    <pre><code>
+        /* Alle &lt;p&gt; elementen worden rood weergegeven. */
+        p {
+          color: red;
+        }</code></pre>
+    Een descendant selector doelt op alle onderliggende elementen van een bepaald parent element. Bijv:
+    <pre><code>
+        /* Alle &lt;span&gt; elementen die binnen een &lt;div> parent-element vallen worden rood weergegeven. */
+        div span {
+          color: red;
+        }</code></pre>
+    Een class-selector kiest alle elementen van een bepaalde klasse. Wanneer je dus elementen indeelt in dezelfde
+    klasse,
+    kunnen dezen samen worden aangesproken. Bijv:
+    <pre><code>
+            .city {
+                background-color: tomato;
+                color: white;
+              } 
+            </code> </pre>
+    is van toepassing op allebei de volgende elementen, omdat ze in dezelfde "city" klasse zijn ingedeeld:
+    <pre><code>
+  &lt;div class="city">
+  &lt;h2>London&lt;/h2>
+  &lt;p>London is the capital of England.&lt;/p>
+&lt;/div>
+
+&lt;div class="city">
+  &lt;h2>Paris&lt;/h2>
+  &lt;p>Paris is the capital of France.&lt;/p>
+&lt;/div>
+
+            </code></pre>
 </body>
+
 </html>
