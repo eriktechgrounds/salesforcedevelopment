@@ -7,6 +7,22 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <br><br>
+    Cascade laat zich vertalen als (kleine) waterval. Zoals het water in een waterval eerst de rotsen bovenaan raakt<br>
+    en uiteindelijk de laagste - zo wordt in CSS (Cascading Style Sheet) van boven naar beneden geinterpreteerd. <br>
+    Bij een gelijk hierarchische niveau, komt het laatst (laagst) genoemde element tot uiting.<br>
+    Inheritance houdt in dat in sommige gevallen, een child-element eigenschappen "erft" (inheritance) van het <br>
+    parent element. Omdat het child-element per definitie lager geplaatst is dan het parent element, kan<br>
+    deze georven eigenschap, volgens het cascading principe, dus wel nader gewijzigd worden.<br>
+    <br>
+    Conflicterende declaraties worden in de volgende volgorde toegepast, waarbij latere declaraties voorrang hebben op eerdere:<br>
+<ol>
+    <li>Declaraties in user agent stylesheets (bijvoorbeeld de standaardstijlen van de browser, die worden gebruikt als er <br>geen andere styling is ingesteld).</li>
+    <li> Normale declaraties in user style sheets (aangepaste stijlen ingesteld door een gebruiker).</li>
+    <li>Normale declaraties in author stylesheets (dit zijn de stijlen die door ons, de webontwikkelaars, zijn ingesteld).</li>
+    <li>!important declaraties in author stylesheets</li>
+    <li>!important declaraties in user stylesheets</li>
+</ol>
+Het is logisch dat de stylesheets van webontwikkelaars de stylesheets van gebruikers overschrijven, zodat het ontwerp kan<br> blijven zoals het bedoeld is, maar soms hebben gebruikers goede redenen om de stijlen van webontwikkelaars te overschrijven,<br> zoals hierboven vermeld - dit kan bereikt worden door !important in hun regels te gebruiken.
 </body>
 </html>

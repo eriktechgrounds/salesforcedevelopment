@@ -1,1 +1,20 @@
-!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<br><br>
+    De ~ combinator selecteert child elementen. Dit betekent dat het tweede element volgt op het eerste (hoewel niet noodzakelijkerwijs onmiddellijk),<br> en dat beide dezelfde parent hebben.
+   <br> Syntaxis: A ~ B<br>
+    Voorbeeld: p ~ span zal overeenkomen met alle &lt;span> elementen die volgen op een &lt;p>, onmiddellijk of niet.
+    <pre><code>
+        p ~ span {
+            background-color: yellow;
+          }
+    </code></pre>
+</body>
+</html>

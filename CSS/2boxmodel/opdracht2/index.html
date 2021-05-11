@@ -5,8 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        div {
+            background-color:rgb(13, 201, 91);
+        }
+        p {
+            background-color:rgb(0, 167, 0);
+            border:2px;
+            border-style:solid;
+            border-color:black;
+        }
+        .inline {
+            background-color:white;
+        }
+    </style>
 </head>
 <body>
-    
+    <div>
+    <p>Dit is een block box en neemt de hele breedte in waardoor de volgende box op de volgende regel zit</p>
+    <p>In dit blok zit <span class="inline">inline tekst</span>, wat dus niet op de volgende regel komt te <span class="inline">staan</span></p>
+    </div>
 </body>
 </html>
