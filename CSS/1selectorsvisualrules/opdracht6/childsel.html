@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        div > p { 
+            color:white; 
+            background: green; 
+            padding:2px; 
+        } 
+    </style> 
+</head>
+<body>
+    Voorbeeld:  Match alle &lt;p> elementen binnen de parent &lt;div>.
+   <pre>
+       <code>
+        &lt;!DOCTYPE html> 
+        &lt;html> 
+            &lt;head> 
+                &lt;title> 
+                    CSS child selector 
+                &lt;/title> 
+                &lt;style> 
+                    div > p { 
+                        color:white; 
+                        background: green; 
+                        padding:2px; 
+                    } 
+                &lt;/style> 
+            &lt;/head> 
+              
+            &lt;body> 
+                &lt;div>
+                      
+                    &lt;p> 
+                        Hallo wereld
+                    &lt;/p> 
+                &lt;/div> 
+                &lt;p>Dit word niet gestyled, want geen child van een div element&lt;/p>
+            &lt;/body> 
+        &lt;/html> 
+       </code>
+   </pre>
+   <br>
+   Voorbeeld:
+<br>
+<div>
+
+    <p>
+        Hallo wereld
+    </p>
+</div>
+<p>Dit word niet gestyled, want geen child van een div element</p>
+</body>
+</body>
+</html>
