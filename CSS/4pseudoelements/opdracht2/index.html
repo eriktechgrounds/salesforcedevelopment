@@ -22,6 +22,19 @@ input[type=file]::file-selector-button:hover {
   background-color: #81ecec;
   border: 2px solid #00cec9;
 }
+
+input::placeholder {
+  color: red;
+  font-size: 1.2em;
+  font-style: italic;
+}
+.fruit li::marker {
+  color: rgb(44, 82, 250);
+  font-size: 1.5em;
+}
+::spelling-error  {
+  text-decoration: wavy red;
+}
     </style>
 </head>
 
@@ -63,6 +76,45 @@ input[type=file]::file-selector-button:hover {
     <label for="fileUpload">Upload file</label>
     <input type="file" id="fileUpload">
   </form>
+  <br>
+  <br>
+  <br>
+  Pseudo-class <code>::grammar-error</code> kan worden gebruikt om tekst die door de user-agent (vaak browser) als<br>
+  gramatisch incorrect is aangemerkt te styleren. 
+  <br><br>
+  Dit kan met de volgende CSS eigenschappen worden gedaan:<br>
+  <ul>
+    <li><a href="/en-US/docs/Web/CSS/color"><code>color</code></a></li>
+    <li><a href="/en-US/docs/Web/CSS/background-color"><code>background-color</code></a></li>
+    <li><a href="/en-US/docs/Web/CSS/cursor"><code>cursor</code></a></li>
+    <li><a href="/en-US/docs/Web/CSS/caret-color"><code>caret-color</code></a></li>
+    <li><a href="/en-US/docs/Web/CSS/outline"><code>outline</code></a> etc</li>
+    <li><a href="/en-US/docs/Web/CSS/text-decoration"><code>text-decoration</code></a> etc</li>
+    <li><a href="/en-US/docs/Web/CSS/text-emphasis-color"><code>text-emphasis-color</code></a></li>
+    <li><a href="/en-US/docs/Web/CSS/text-shadow"><code>text-shadow</code></a></li>
+   </ul>
+   Ook dit is nog een experimentele feature, hierom geen voorbeeld.<br><br>
+   <code>::spelling-error</code> is vergelijkbaar met <code>::grammar-error</code>, maar dan voor spellingsfouten.<br>
+   Deze functie is minder experimenteel, hier een voorbeeld welke mogelijk niet door alle browsers word weergegeven.<br>
+   Klik op de engelse tekst:<p contenteditable spellcheck="true">My friends are coegdfgfddffbgning to the party tonight.</p>
+   <br><br><br>
+   Met <code>::placeholder</code> kan de tekst in een input-veld worden gestyleerd welke getoond wordt tot een gebruiker<br>
+ er zelf begint te typen. Deze zogenaamde "placeolder" dient er vaak voor om de functie
+   of gewenste<br> inhoud van een tekstveld aan te duiden.<br><br>
+   Voorbeeld: 
+   <input placeholder="Hier typen...">
+   <br><br><br>
+   Met <code>::marker</code> kan het markerende element van een list-item worden gestyleerd. Bijvoorbeeld de bullets<br>
+   in een unordered list:
+   <ul class="fruit">
+    <li>Peaches</li>
+    <li>Apples</li>
+    <li>Plums</li>
+  </ul>
+  <br><br>
+  Met <code>::target-text</code> kan een specifiek stuk tekst waarnaar een link verwijst, gestyleerd worden.<br>
+  Experimentele feature, geen voorbeeld.<br><br><br>
+  
 </body>
 
 </html>
