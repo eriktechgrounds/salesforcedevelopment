@@ -1,12 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .circle-overlapping {
+            background-color: rgb(0, 0, 0);
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: relative;
+            left:30px;
+            top: 30px;
+        }
+
+        .circle-overlapping::before {
+            content: '';
+            position: absolute;
+            top: 30px;
+            left: -20px;
+            width: 40px;
+            height: 40px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 50%;
+        }
+
+        .circle-overlapping::after {
+            content: '';
+            position: absolute;
+            top: 30px;
+            left: 75px;
+            background-color: rgb(0, 0, 0);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        .circle2-overlapping {
+            background-color: rgb(0, 0, 0);
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: relative;
+            left:180px;
+            top: -70px;
+        }
+
+        .circle2-overlapping::before {
+            content: '';
+            position: absolute;
+            top: 30px;
+            left: -20px;
+            width: 40px;
+            height: 40px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 50%;
+        }
+
+        .circle2-overlapping::after {
+            content: '';
+            position: absolute;
+            top: 30px;
+            left: 75px;
+            background-color: rgb(0, 0, 0);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        .circle3-overlapping {
+            background-color: rgb(0, 0, 0);
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: relative;
+            left: 330px;
+            top: -170px;
+        }
+
+        .circle3-overlapping::before {
+            content: '';
+            position: absolute;
+            top: 30px;
+            left: -20px;
+            width: 40px;
+            height: 40px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 50%;
+        }
+
+        .circle3-overlapping::after {
+            content: '';
+            position: absolute;
+            top: 30px;
+            left: 75px;
+            background-color: rgb(0, 0, 0);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+    </style>
+
 </head>
+
 <body>
-    
+    <br>
+    <br>
+    <div class="circle-overlapping"></div>    
+    <div class="circle2-overlapping"></div>
+    <div class="circle3-overlapping"></div>
+<pre><code>
+    .circle-overlapping {
+        background-color: rgb(0, 0, 0);
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: relative;
+        left:30px;
+        top: 30px;
+    }
+
+    .circle-overlapping::before {
+        content: '';
+        position: absolute;
+        top: 30px;
+        left: -20px;
+        width: 40px;
+        height: 40px;
+        background-color: rgb(0, 0, 0);
+        border-radius: 50%;
+    }
+
+    .circle-overlapping::after {
+        content: '';
+        position: absolute;
+        top: 30px;
+        left: 75px;
+        background-color: rgb(0, 0, 0);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    .circle2-overlapping {
+        background-color: rgb(0, 0, 0);
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: relative;
+        left:180px;
+        top: -70px;
+    }
+
+    .circle2-overlapping::before {
+        content: '';
+        position: absolute;
+        top: 30px;
+        left: -20px;
+        width: 40px;
+        height: 40px;
+        background-color: rgb(0, 0, 0);
+        border-radius: 50%;
+    }
+
+    .circle2-overlapping::after {
+        content: '';
+        position: absolute;
+        top: 30px;
+        left: 75px;
+        background-color: rgb(0, 0, 0);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    .circle3-overlapping {
+        background-color: rgb(0, 0, 0);
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: relative;
+        left: 330px;
+        top: -170px;
+    }
+
+    .circle3-overlapping::before {
+        content: '';
+        position: absolute;
+        top: 30px;
+        left: -20px;
+        width: 40px;
+        height: 40px;
+        background-color: rgb(0, 0, 0);
+        border-radius: 50%;
+    }
+
+    .circle3-overlapping::after {
+        content: '';
+        position: absolute;
+        top: 30px;
+        left: 75px;
+        background-color: rgb(0, 0, 0);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+</code></pre>
 </body>
+
 </html>

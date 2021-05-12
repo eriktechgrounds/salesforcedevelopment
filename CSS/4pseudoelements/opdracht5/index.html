@@ -1,12 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .frame {
+            border-width: 2px;
+            border-style: solid;
+            border-color: gray;
+            width: 800px;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 20px;
+            padding-left: 10px;
+            background: transparent;
+        }
+
+        .frame::after {
+            content: '';
+            background-image: url('depositphotos_57948043_l-2015.jpg');
+            background-repeat: no-repeat;
+            display: block;
+            left: 8px;
+            top: 10px;
+            width: 823px;
+            height: 278px;
+            position: absolute;
+            z-index: -1;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="frame">
+        Lorem Ipsum is slechts een proeftekst uit het drukkerij-
+        en zetterijwezen. Lorem Ipsum is de standaard proeftekst
+        drukker een zethaak met letters nam en ze door elkaar
+        husselde om een font-catalogus te maken.
+        Lorem Ipsum is slechts een proeftekst uit het drukkerij-
+        en zetterijwezen. Lorem Ipsum is de standaard proeftekst
+        drukker een zethaak met letters nam en ze door elkaar
+        husselde om een font-catalogus te maken.
+        Lorem Ipsum is slechts een proeftekst uit het drukkerij-
+        en zetterijwezen. Lorem Ipsum is de standaard proeftekst
+        drukker een zethaak met letters nam en ze door elkaar
+        husselde om een font-catalogus te maken.
+        Lorem Ipsum is slechts een proeftekst uit het drukkerij-
+        en zetterijwezen. Lorem Ipsum is de standaard proeftekst
+        drukker een zethaak met letters nam en ze door elkaar
+        husselde om een font-catalogus te maken....
+        Lorem Ipsum is de standaard proeftekst
+        drukker een zethaak met letters nam en ze door elkaar
+        husselde om een font-catalogus te maken....
+        Lorem Ipsum is de standaard proeftekst
+        drukker een zethaak met letters nam en ze door elkaar
+        husselde om een font-catalogus te maken....
+    </div>
+    <br><br><br>
+    <pre><code>
+        .frame {
+            border-width: 2px;
+            border-style: solid;
+            border-color: gray;
+            width: 800px;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 20px;
+            padding-left: 10px;
+            background: transparent;
+        }
+
+        .frame::after {
+            content: '';
+            background-image: url('https://nltimes.nl/sites/nltimes.nl/files/styles/news_article_full/public/2020/05/depositphotos_57948043_l-2015.jpg');
+            background-repeat: no-repeat;
+            display: block;
+            left: 8px;
+            top: 10px;
+            width: 823px;
+            height: 277px;
+            position: absolute;
+            z-index: -1;
+        }
+    </code></pre>
 </body>
+
 </html>
