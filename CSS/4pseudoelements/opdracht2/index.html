@@ -1,12 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        video::backdrop {
+            background-color: rgb(0, 127, 201);
+        }
+        input[type=file]::file-selector-button {
+  border: 2px solid #6c5ce7;
+  padding: .2em .4em;
+  border-radius: .2em;
+  background-color: #a29bfe;
+  transition: 1s;
+}
+ 
+input[type=file]::file-selector-button:hover {
+  background-color: #81ecec;
+  border: 2px solid #00cec9;
+}
+    </style>
 </head>
+
 <body>
-    
+    <br>
+    <br>
+    Met het pseudo-element <code>::backdrop</code> kun je in fullscreen-modus een andere kleur aan de achtergrond<br>
+    geven dan het standaard zwart. Bijvoorbeeld bij een video die op fullscreen gaat, maar door de resolutie niet het
+    volledige<br>
+    scherm bedekt, worden de balken in het overgebleven schermdeel een kleur naar keuze, ipv de bekende zwarte balken.
+    <br>
+    <br><br>Voorbeeld (zie fullscreen)<br>
+    <video controls src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
+        poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217" width="620">
+        Sorry, your browser doesn't support embedded videos. Time to upgrade!
+    </video>
+    <br>
+    <br>
+    <br>
+    Het pseudo-element <code>::cue</code> word gebruikt om .VTT bestanden te styleren. Dit zijn bestanden in het
+    WebVTT<br>
+    (Web Video Text Tracks) formaat, welke word gebruikt voor op tijd gezette text-tracks, zoals ondertitels. <br>
+    Hier kunnen dan bijvoorbeeld de eigenschappen <code>color, text-color, text-shadow, line-height</code> en andere<br>
+    eigenschappen voor de weergave van de tekst aangepast worden.
+    <br><br>
+    Het pseudo-element <code>::cue-region</code> geeft aan waar in de viewport de betreffende ondetitels dienen te <br>
+    worden weergegeven en of ze al dan niet moeten mee-scrollen.
+    <br><br>
+    <code>::cue</code> en <code>::cue-region</code> zijn experimentele features, welke nog niet in een definitieve<br>
+    CSS-standaard zijn opgenomen, en slechts experimenteel door een beperkt aantal browsers wordt ondersteund.<br>
+    Hierom geen voorbeelden.
+    <br>
+    <br>
+    <br>
+    <code>::file-selector-button</code> plaatst een knop om een bestand te kiezen van de opslagruimte op het lokale<br>
+    systeem, bijv. om te uploaden om op te slaan of in de browser te bewerken.<br><br>
+    Bijvoorbeeld:<br>
+<form>
+    <label for="fileUpload">Upload file</label>
+    <input type="file" id="fileUpload">
+  </form>
 </body>
+
 </html>
