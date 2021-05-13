@@ -12,7 +12,7 @@
       height: 250px;
       background-color: red;
       position: relative;
-      top: 100px;
+      top: 60px;
       left: 100px;
     }
 
@@ -36,6 +36,33 @@
   </style>
 </head>
 <div class="stareyo"></div>
+<br><br><br><br>
+<pre><code>    .stareyo {
+  width: 250px;
+  height: 250px;
+  background-color: red;
+  position: relative;
+  top: 100px;
+  left: 100px;
+}
+
+.stareyo::before {
+  width: 250px;
+  height: 250px;
+  background-color: red;
+  content: "";
+  position: absolute;
+  transform: rotate(20deg);
+}
+
+.stareyo::after {
+  width: 250px;
+  height: 250px;
+  background-color: red;
+  content: "";
+  position: absolute;
+  transform: rotate(60deg);
+}</code></pre>
 
 <body>
 
