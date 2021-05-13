@@ -1,12 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    .container {
+        display: flex;
+
+        width: 400px;
+        height: 200px;
+        background: #CCC;
+        /* values: flex-start, flex-end, center, baseline, stretch */
+    }
+
+    #center {
+        align-items: center;
+    }
+
+    #flexend {
+        align-items: flex-end;
+    }
+
+    #flexstart {
+        align-items: flex-start;
+    }
+
+    #baseline {
+        align-items: baseline;
+    }
+
+    .container div {
+        flex: 1;
+
+        width: 100px;
+        height: auto;
+        /* let this be set to see how the items respond to 'align-items: stretch' */
+        margin: 0px;
+        font-family: Bitter;
+        font-size: 24px;
+    }
+
+    .container .third-item {
+        height: 110px;
+        /* disable this to see how the item responds to 'align-items: stretch' */
+        background: #CC3333;
+        font-size: 14px;
+        /* over-loading the font size so this item will respond to 'align-items: baseline' */
+    }
+
+    .container .second-item {
+        height: 140px;
+        /* disable this to see how the item responds to 'align-items: stretch' */
+        background: #FFFC33;
+    }
+
+    .container .first-item {
+        height: 160px;
+        /* disable this to see how the item responds to 'align-items: stretch' */
+        background: #3333FF;
+    }
+
+    .stretch {
+        display: flex;
+
+        width: 400px;
+        height: 200px;
+        background: #CCC;
+        /* values: flex-start, flex-end, center, baseline, stretch */
+    }
+
+    .stretch div {
+        flex: 1;
+
+        width: 100px;
+        height: auto;
+        /* let this be set to see how the items respond to 'align-items: stretch' */
+        margin: 0px;
+        font-family: Bitter;
+        font-size: 24px;
+    }
+
+    .stretch .third-item {
+        /* disable this to see how the item responds to 'align-items: stretch' */
+        background: #CC3333;
+        font-size: 14px;
+        /* over-loading the font size so this item will respond to 'align-items: baseline' */
+    }
+
+    .stretch .second-item {
+        /* disable this to see how the item responds to 'align-items: stretch' */
+        background: #FFFC33;
+    }
+
+    .stretch .first-item {
+        /* disable this to see how the item responds to 'align-items: stretch' */
+        background: #3333FF;
+    }
+</style>
+
 <body>
+    <br>
+    <h1>align-items</h1>
+    <p>Hier enkele voorbeelden van verschillende parameters van de align-items property: <br>
+        vergelijkbaar met justify-content, maar dan in verticale richting <br>(voorbeeld van <a href="https://webplatform.github.io/docs/css/properties/align-items/">Webplatform</a>)</p>
+    <br><br>
+    <h2>center</h2>
+    <div class="container" id="center">
+        <div class="first-item"></div>
+        <div class="second-item"></div>
+        <div class="third-item"></div>
+    </div><br>
+    <h2>flexend</h2>
+    <div class="container" id="flexend">
+        <div class="first-item"></div>
+        <div class="second-item"></div>
+        <div class="third-item"></div>
+    </div>
+    <br>
+    <h2>flexstart</h2>
+    <div class="container" id="flexstart">
+        <div class="first-item"></div>
+        <div class="second-item"></div>
+        <div class="third-item"></div>
+    </div>
+    <br>
+    <h2>baseline</h2>
+    <div class="container" id="baseline">
+        <div class="first-item"></div>
+        <div class="second-item"></div>
+        <div class="third-item"></div>
+    </div>
+    <br>
+    <h2>stretch</h2>
+    <div class="stretch">
+        <div class="first-item"></div>
+        <div class="second-item"></div>
+        <div class="third-item"></div>
+    </div>
+    <br><br><br>
+    <pre><code>
+        .container {
+            display: flex;
     
+            width: 400px;
+            height: 200px;
+            background: #CCC;
+            /* values: flex-start, flex-end, center, baseline, stretch */
+        }
+    
+        #center {
+            align-items: center;
+        }
+    
+        #flexend {
+            align-items: flex-end;
+        }
+    
+        #flexstart {
+            align-items: flex-start;
+        }
+    
+        #baseline {
+            align-items: baseline;
+        }
+    
+        .container div {
+            flex: 1;
+    
+            width: 100px;
+            height: auto;
+            /* let this be set to see how the items respond to 'align-items: stretch' */
+            margin: 0px;
+            font-family: Bitter;
+            font-size: 24px;
+        }
+    
+        .container .third-item {
+            height: 110px;
+            /* disable this to see how the item responds to 'align-items: stretch' */
+            background: #CC3333;
+            font-size: 14px;
+            /* over-loading the font size so this item will respond to 'align-items: baseline' */
+        }
+    
+        .container .second-item {
+            height: 140px;
+            /* disable this to see how the item responds to 'align-items: stretch' */
+            background: #FFFC33;
+        }
+    
+        .container .first-item {
+            height: 160px;
+            /* disable this to see how the item responds to 'align-items: stretch' */
+            background: #3333FF;
+        }
+    
+        .stretch {
+            display: flex;
+    
+            width: 400px;
+            height: 200px;
+            background: #CCC;
+            /* values: flex-start, flex-end, center, baseline, stretch */
+        }
+    
+        .stretch div {
+            flex: 1;
+    
+            width: 100px;
+            height: auto;
+            /* let this be set to see how the items respond to 'align-items: stretch' */
+            margin: 0px;
+            font-family: Bitter;
+            font-size: 24px;
+        }
+    
+        .stretch .third-item {
+            /* disable this to see how the item responds to 'align-items: stretch' */
+            background: #CC3333;
+            font-size: 14px;
+            /* over-loading the font size so this item will respond to 'align-items: baseline' */
+        }
+    
+        .stretch .second-item {
+            /* disable this to see how the item responds to 'align-items: stretch' */
+            background: #FFFC33;
+        }
+    
+        .stretch .first-item {
+            /* disable this to see how the item responds to 'align-items: stretch' */
+            background: #3333FF;
+        }
+    </code></pre>
 </body>
+
 </html>
