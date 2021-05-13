@@ -1,12 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .columns {
+            display: flex;
+            height: 70vh;
+            max-height: 900px;
+            align-items: stretch;
+            max-width: 230px;
+        }
+
+        .column-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: center;
+        }
+
+        .column-bar {
+            border-right: 5px solid white;
+            background: rgb(172, 180, 255)
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="columns">
+        <div class="column-container">
+            <div class="column-bar series-a" style="flex-basis: 99%"></div>
+        </div>
+        <div class="column-container">
+            <div class="column-bar series-a" style="flex-basis: 40%"></div>
+        </div>
+        <div class="column-container">
+            <div class="column-bar series-a" style="flex-basis: 50%"></div>
+        </div>
+        <div class="column-container">
+            <div class="column-bar series-a" style="flex-basis: 60%"></div>
+        </div>
+        <div class="column-container">
+            <div class="column-bar series-a" style="flex-basis: 25%"></div>
+        </div>
+        <div class="column-container">
+            <div class="column-bar series-a" style="flex-basis: 35%"></div>
+        </div>
+    </div>
+    </div>
+    <br><br><br>
+    <pre><code>        .columns {
+        display: flex;
+        height: 70vh;
+        max-height: 900px;
+        align-items: stretch;
+        max-width: 230px;
+    }
+
+    .column-container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+    }
+
+    .column-bar {
+        border-right: 5px solid white;
+        background: rgb(172, 180, 255)
+    }</code></pre>
 </body>
+
 </html>
