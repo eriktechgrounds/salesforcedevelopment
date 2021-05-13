@@ -1,12 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    .flex-container {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        width: 1000px;
+    }
+
+    .wrap {
+        flex-wrap: wrap;
+    }
+
+    .flex-item {
+        padding: 0px;
+        margin-right: 20px;
+        width: 225px;
+        height: 150px;
+        border-style: solid;
+        border-color: black;
+        border-width: 1px;
+    }
+
+    .flex-container>*:first-child {
+        height:200px;
+        background-image: url(mario1.png);
+        background-position: center;
+        background-size:cover;
+    }
+
+    .flex-container>*:nth-child(2) {
+        background-color: skyblue;
+        height:200px;
+        background-image: url(mario2.png);
+        background-position: center;
+        background-size:cover;
+    }
+
+    .flex-container>*:nth-child(3) {
+        background-color: rgb(178, 231, 252);
+        height:200px;
+        background-image: url(mario3.png);
+        background-position: center;
+        background-size:cover;
+    }
+
+    .flex-container>*:nth-child(4) {
+        background-color: rgb(255, 255, 255);
+        height:200px;
+        background-image: url(mario4.png);
+        background-position: center;
+        background-size:cover;
+    }
+
+    .flex-container>*:nth-child(5) {
+        text-align: center;
+        height:110px;
+    }
+
+    .flex-container>*:nth-child(6) {
+        text-align: center;        height:110px;
+    }
+    .flex-container>*:nth-child(7) {
+        text-align: center;        height:110px;
+    }
+    .flex-container>*:nth-child(8) {
+        text-align: center;        height:110px;
+    }
+</style>
+
 <body>
-    
+    <br><br>
+    <ul class="flex-container wrap">
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"><h5 style="color: blue;">Super Mario Run</h5>Een nieuw avontuur</li>
+        <li class="flex-item"><h5 style="color: blue;">Mario Maker</h5></li>
+        <li class="flex-item"><h5 style="color: blue;">Super Mario 3</h5></li>
+        <li class="flex-item"><h5 style="color: blue;">Yoshi's Island</h5></li>
+        <li class="flex-item">9</li>
+        <li class="flex-item">10</li>
+        <li class="flex-item">11</li>
+        <li class="flex-item">12</li>
+    </ul>
+    <br><br><br>
+ 
 </body>
 </html>
