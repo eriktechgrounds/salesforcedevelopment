@@ -1,12 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 900px;
+    }
+
+    .box>* {
+        padding: 20px;
+        border: 2px solid rgb(255, 255, 255);
+        background-color: rgba(0, 110, 255, 0.2);
+    }
+
+    .box>*:first-child {
+        align-self: stretch;
+    }
+
+    .box>*:nth-child(2) {
+        width: 300px;
+    }
+
+    .box>*:nth-child(3) {
+        width: 400px;
+    }
+
+    .box>*:nth-child(4) {
+        align-self: stretch;
+        width: 500px;
+    }
+
+    .box>*:nth-child(5) {
+        align-self: stretch;
+        width: 150px;
+    }
+
+    .box>*:nth-child(6) {
+        align-self: stretch;
+        width: 270px
+    }
+</style>
+
 <body>
+    <br>
+    <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div><br>
+    <pre><code>
+        .box {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+            width: 900px;
+        }
     
+        .box>* {
+            padding: 20px;
+            border: 2px solid rgb(255, 255, 255);
+            background-color: rgba(0, 110, 255, 0.2);
+        }
+          .box>*:first-child {
+              align-self: stretch;
+          }
+          .box>*:nth-child(2) {
+              width:300px;
+          }
+          .box>*:nth-child(3) {
+          width:400px;
+          }
+          .box>*:nth-child(4) {
+              align-self: stretch;
+              width:500px;
+          }
+          .box>*:nth-child(5) {
+              align-self: stretch;
+              width:150px;
+          }
+          .box>*:nth-child(6) {
+              align-self: stretch;
+              width:270px
+          }
+    </code></pre>
+
 </body>
+
 </html>
