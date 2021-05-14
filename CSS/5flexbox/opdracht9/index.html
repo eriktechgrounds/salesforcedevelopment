@@ -14,6 +14,7 @@
         list-style: none;
         display: flex;
         width: 1000px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
     .wrap {
@@ -25,55 +26,103 @@
         margin-right: 20px;
         width: 225px;
         height: 150px;
-        border-style: solid;
-        border-color: black;
-        border-width: 1px;
     }
 
     .flex-container>*:first-child {
-        height:200px;
+        height: 200px;
         background-image: url(mario1.png);
         background-position: center;
-        background-size:cover;
+        background-size: cover;
     }
 
     .flex-container>*:nth-child(2) {
         background-color: skyblue;
-        height:200px;
+        height: 200px;
         background-image: url(mario2.png);
         background-position: center;
-        background-size:cover;
+        background-size: cover;
     }
 
     .flex-container>*:nth-child(3) {
         background-color: rgb(178, 231, 252);
-        height:200px;
+        height: 200px;
         background-image: url(mario3.png);
         background-position: center;
-        background-size:cover;
+        background-size: cover;
     }
 
     .flex-container>*:nth-child(4) {
         background-color: rgb(255, 255, 255);
-        height:200px;
+        height: 200px;
         background-image: url(mario4.png);
         background-position: center;
-        background-size:cover;
+        background-size: cover;
     }
 
     .flex-container>*:nth-child(5) {
         text-align: center;
-        height:110px;
+        height: 110px;
     }
 
     .flex-container>*:nth-child(6) {
-        text-align: center;        height:110px;
+        text-align: center;
+        height: 110px;
     }
+
     .flex-container>*:nth-child(7) {
-        text-align: center;        height:110px;
+        text-align: center;
+        height: 110px;
     }
+
     .flex-container>*:nth-child(8) {
-        text-align: center;        height:110px;
+        text-align: center;
+        height: 110px;
+    }
+
+    .flex-container>*:nth-child(9) {
+        text-align: center;
+        padding-top: 17px;
+        height: 35px;
+        font-size: smaller;
+        color: white;
+        background-color: mediumblue;
+    }
+
+    .flex-container>*:nth-child(10) {
+        text-align: center;
+        padding-top: 17px;
+        height: 35px;
+        font-size: smaller;
+        color: white;
+        background-color: mediumblue;
+    }
+
+    .flex-container>*:nth-child(11) {
+        text-align: center;
+        padding-top: 17px;
+        height: 35px;
+        font-size: smaller;
+        color: white;
+        background-color: mediumblue;
+    }
+
+    .flex-container>*:nth-child(12) {
+        text-align: center;
+        padding-top: 17px;
+        height: 35px;
+        font-size: smaller;
+        color: white;
+        background-color: mediumblue;
+    }
+
+
+    p {
+        font-size: xx-small
+    }
+
+    h5 {
+        margin-top: 10px;
+        color: blue;
     }
 </style>
 
@@ -84,16 +133,151 @@
         <li class="flex-item"></li>
         <li class="flex-item"></li>
         <li class="flex-item"></li>
-        <li class="flex-item"><h5 style="color: blue;">Super Mario Run</h5>Een nieuw avontuur</li>
-        <li class="flex-item"><h5 style="color: blue;">Mario Maker</h5></li>
-        <li class="flex-item"><h5 style="color: blue;">Super Mario 3</h5></li>
-        <li class="flex-item"><h5 style="color: blue;">Yoshi's Island</h5></li>
-        <li class="flex-item">9</li>
-        <li class="flex-item">10</li>
-        <li class="flex-item">11</li>
-        <li class="flex-item">12</li>
+        <li class="flex-item">
+            <h5>Super Mario Run</h5>
+            <p>Een nieuw soort Super Mario-game, die je met één hand kunt spelen! Je bestuurt Mario door het scherm aan
+                te raken terwijl hij automatisch door het level rent.</p>
+        </li>
+        <li class="flex-item">
+            <h5>Mario Maker</h5>
+            <p>Steek de handen uit de mouwen en bouw de Super Mario-levels waar je altijd al van hebt gedroomd in Super
+                Mario Maker 2, exclusief voor de Nintendo Switch!</p>
+        </li>
+        <li class="flex-item">
+            <h5>Super Mario 3</h5>
+            <p>Super Mario Bros. 3 introduceert een tal van vooruitgangen t.o.v. het originele Super Mario Bros., zoals
+                de toevoeging van een wereldmap en minigames.</p>
+        </li>
+        <li class="flex-item">
+            <h5>Yoshi's Island</h5>
+            <p>Yoshi’s island is een spel waar elk level weer iets nieuws biedt van vijanden tot uitdagingen. Dit houdt
+                het spel door de hele speeltijd interessant en uitdagend.</p>
+        </li>
+        <li class="flex-item">Play Super Mario Run</li>
+        <li class="flex-item">Play Mario Maker</li>
+        <li class="flex-item">Play Super Mario 3</li>
+        <li class="flex-item">Play Yoshi's Island</li>
     </ul>
     <br><br><br>
- 
+    <pre><code>
+        .flex-container {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            width: 1000px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    
+        .wrap {
+            flex-wrap: wrap;
+        }
+    
+        .flex-item {
+            padding: 0px;
+            margin-right: 20px;
+            width: 225px;
+            height: 150px;
+        }
+    
+        .flex-container>*:first-child {
+            height: 200px;
+            background-image: url(mario1.png);
+            background-position: center;
+            background-size: cover;
+        }
+    
+        .flex-container>*:nth-child(2) {
+            background-color: skyblue;
+            height: 200px;
+            background-image: url(mario2.png);
+            background-position: center;
+            background-size: cover;
+        }
+    
+        .flex-container>*:nth-child(3) {
+            background-color: rgb(178, 231, 252);
+            height: 200px;
+            background-image: url(mario3.png);
+            background-position: center;
+            background-size: cover;
+        }
+    
+        .flex-container>*:nth-child(4) {
+            background-color: rgb(255, 255, 255);
+            height: 200px;
+            background-image: url(mario4.png);
+            background-position: center;
+            background-size: cover;
+        }
+    
+        .flex-container>*:nth-child(5) {
+            text-align: center;
+            height: 110px;
+        }
+    
+        .flex-container>*:nth-child(6) {
+            text-align: center;
+            height: 110px;
+        }
+    
+        .flex-container>*:nth-child(7) {
+            text-align: center;
+            height: 110px;
+        }
+    
+        .flex-container>*:nth-child(8) {
+            text-align: center;
+            height: 110px;
+        }
+    
+        .flex-container>*:nth-child(9) {
+            text-align: center;
+            padding-top: 17px;
+            height: 35px;
+            font-size: smaller;
+            color: white;
+            background-color: mediumblue;
+        }
+    
+        .flex-container>*:nth-child(10) {
+            text-align: center;
+            padding-top: 17px;
+            height: 35px;
+            font-size: smaller;
+            color: white;
+            background-color: mediumblue;
+        }
+    
+        .flex-container>*:nth-child(11) {
+            text-align: center;
+            padding-top: 17px;
+            height: 35px;
+            font-size: smaller;
+            color: white;
+            background-color: mediumblue;
+        }
+    
+        .flex-container>*:nth-child(12) {
+            text-align: center;
+            padding-top: 17px;
+            height: 35px;
+            font-size: smaller;
+            color: white;
+            background-color: mediumblue;
+        }
+    
+    
+        p {
+            font-size: xx-small
+        }
+    
+        h5 {
+            margin-top: 10px;
+            color: blue;
+        }
+    </code></pre>
+
 </body>
+
 </html>
