@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    1. <code>return 'slagboom'.charAt(3)</code> - dit geeft <code>a</code> terug, het 3e karakter van de string
+    <code>slagboom</code> (charAt(3) = Character at 3rd position)
+    <br><br>
+    2.
+    <pre><code>
+    const myStr1 = 'taart';
+    const myStr2 = 'spinazie';
+    
+    console.log(myStr2.concat(myStr1));</code></pre>
+    levert de string <code>spinazietaart</code> op, met <code>concat()</code> (concatenate, aaneenschakelen) worden
+    strings aan elkaar geplakt.
+    <br><br>
+    3.
+    <pre><code>        const str = 'hottentottententententoonstelling';
+        console.log(str.slice(-15));
+    </code></pre> geeft <code>tentoonstelling</code> terug, met <code>slice()</code> wordt er een "plakje" (slice) van
+    een string apart genomen, de originele<br>
+    string intact latende.
+    <br><br>
+    4.
+    <pre><code>        const myStr = "koek en brood en vis";
+        const array = myStr.split("en"); 
+        console.log(array)</code> </pre> <br>levert <code>Array(3) [ "koek ", " brood ", " vis" ]</code> op.
+    <code>str.split()</code> wordt gebruikt om de gegeven string te splitsen in een array (reeks) van strings<br> door
+    deze te scheiden (splitten) in substrings met behulp van een opgegeven
+    scheidingsteken in het argument.
+    <br><br>
+    5.
+    De methode <code>substr()</code> geeft een deel van de string terug, beginnend bij de opgegeven index en nog een
+    bepaald<br>
+    aantal tekens daarna. Bijvoorbeeld:
+    <pre><code> const myStr = 'ozonlaag';
+ console.log(myStr.substr(0, 4));</code></pre> levert <code>ozon</code> als output.
+    <script>
+        const myStr = 'ozonlaag';
+        console.log(myStr.substr(0, 4));
+    </script>
+</body>
+
+</html>
