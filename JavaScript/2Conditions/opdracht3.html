@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</div>
 </head>
-
 <body>
     <input type="number" name="number" id="number">
     <button id="btn" onclick="checkNumber()">Button</button>
@@ -17,11 +17,10 @@
     function checkNumber() {
         const numberAsString = element.value;
         const number = Number(numberAsString);
-        if (number === 3) {
-            window.alert("Het ingevoerde getal is gelijk aan 3");
-        }
+        if (number >= 11) {
+            window.alert("Het ingevoerde getal is gelijk aan 11 of groter dan 11.");
+        }  else { window.alert("Het ingevoerde getal is lager dan 11"); }
     }
 </script>
 </body>
-
 </html>
