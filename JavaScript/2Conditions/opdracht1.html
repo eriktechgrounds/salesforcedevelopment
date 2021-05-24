@@ -18,10 +18,11 @@
         const numberAsString = element.value;
         const number = Number(numberAsString);
         if (number === 3) {
-            window.alert("Het ingevoerde getal is gelijk aan 3");
-        }
+            document.getElementById('label').innerHTML = "Het ingevoerde getal is gelijk aan 3.";
+        } else { document.getElementById('label').innerHTML = "";}
     }
 </script>
 </body>
 
 </html>
+

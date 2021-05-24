@@ -20,8 +20,8 @@
             const numberAsString = element.value;
             const number = Number(numberAsString);
             if (number > 4) {
-                window.alert("Het ingevoerde getal is groter dan 4");
-            } else { window.alert("Het ingevoerde getal is niet groter dan 4"); }
+                document.getElementById('label').innerHTML = "Het ingevoerde getal is groter dan 4.";
+            } else { document.getElementById('label').innerHTML = "";}
         }
     </script>
 </body>
