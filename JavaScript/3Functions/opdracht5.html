@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+    <title>Functions</title>
+</head>
+
+<body>
+    <p id="answer"></p>
+    <input type="text" placeholder="Type hier een naam..." id="myInput">
+    <button type="button" onclick="getInputValue();">Ken ik deze persoon?</button>
+    <script>
+        function getInputValue() {
+            let inputVal = document.getElementById("myInput").value;
+            const namen = ['John', 'Olly', 'Mo', 'Hendrik', 'Tony'];
+            let voornaam = namen.includes(document.getElementById("myInput").value);
+            if (voornaam) {
+                let myDiv = document.getElementById("answer");
+                myDiv.innerHTML = "Deze persoon ken ik";
+            }
+            else {
+                let myDiv = document.getElementById("answer");
+                myDiv.innerHTML = "Deze persoon ken ik niet";
+            }
+            console.log(voornaam)
+        }
+    </script>
+</body>
+
+</html>
