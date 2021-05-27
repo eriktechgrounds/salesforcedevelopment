@@ -19,11 +19,11 @@ initial-scale=1.0">
             let voornaam = namen.includes(document.getElementById("myInput").value);
             if (voornaam) {
                 let myDiv = document.getElementById("answer");
-                myDiv.innerHTML = "Deze persoon ken ik";
+                myDiv.innerHTML = "Dit is een bekende van ons:";
             }
             else {
                 let myDiv = document.getElementById("answer");
-                myDiv.innerHTML = "Deze persoon ken ik niet";
+                myDiv.innerHTML = "Onbekend in ons systeem";
             }
             console.log(voornaam)
         }
