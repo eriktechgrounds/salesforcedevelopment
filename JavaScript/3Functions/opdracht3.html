@@ -9,12 +9,12 @@ initial-scale=1.0">
 </head>
 
 <body>
-    <p id="answer"></p>
-    <button onclick="answer()">click</button>
+    <input type="number" placeholder="Type een nummer..." id="myInput">
+    <button type="button" onclick="getInputValue();">Haal waarde op</button>
     <script>
-        function answer() {
-            let numbers = 123;
-            console.log(numbers);
+        function getInputValue(){
+            let inputVal = document.getElementById("myInput").value;
+console.log(inputVal)
         }
  // Plaats hieronder alle antwoorden van de opdrachten.
     </script>
