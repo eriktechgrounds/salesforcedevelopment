@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+    <title>Functions</title>
+</head>
+
+<body>
+Twee of meer parameters kunnen aan een functie meegegeven worden gescheiden door een komma, bijv <code>function funct(param1, param2, param3)</code><br><br>
+
+Door middel van rest parameters kan er een onbeperkt aantal arguments vertegenwoordigd worden als array (een rij bestaande uit elementen).
+<pre><code>
+    function funct(param1, param2, ...args) {
+        //
+    }
+</code></pre>
+Hier is de laatste parameter, die voorafgaand met drie punten, de rest parameter (...args). Alle arguments die aan de functie worden meegegeven worden onderdeel van de parameter-lijst. In het voorbeeld hierboven zou een eerste argument gekoppeld worden aan a, het tweede argument aan b en het derde en alle erop volgende aan de rest parameter <code>args</code>, als een array. In dit voorbeeld:<br>
+<code>funct(1, 2, 3, 'A', 'B', 'C', 'D')</code><br>
+zal het <code>args</code>-array dus de volgende waardes opslaan: <code>[3, 'A', 'B', 'C', 'D']</code><br>
+Aan een rest parameter kan een oneindig aantal arguments gekoppeld worden, bij expliciete parameters vallen alle arguments groter in aantal dan de expliciet genoemde, "buiten de boot" en worden dus genegeerd.
+</body>
+
+</html>

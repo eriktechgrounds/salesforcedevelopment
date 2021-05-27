@@ -11,13 +11,13 @@ initial-scale=1.0">
 <body>
     <p id="answer"></p>
     <p id="myInput"></p>
-    <button type="button" onclick="getInputValue();">Ken ik deze persoon?</button>
+    <button type="button" onclick="getInputValue()">Ken ik deze persoon?</button>
     <script>
         const namenLijst = ['John', 'Olly', 'Mo', 'Hendrik', 'Tony', 'Irus', 'Jan', 'Peter'];
         let randomNaam = namenLijst[Math.round(Math.random() * namenLijst.length)];
         document.getElementById("myInput").innerHTML = randomNaam;
 
-        function getInputValue() {
+let getInputValue = () => {
             let inputVal = document.getElementById("myInput").value;
             const namenBekend = ['John', 'Olly', 'Mo', 'Hendrik', 'Tony'];
             let deNaam = namenBekend.includes(randomNaam);
