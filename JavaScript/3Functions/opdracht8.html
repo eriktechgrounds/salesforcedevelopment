@@ -181,7 +181,7 @@
             <thead>
                 <tr>
                     <th>Naam</th>
-                    <th>Cijfer</th>
+                    <th>Beta</th>
                 </tr>
             </thead>
             <tbody>
@@ -191,7 +191,7 @@
                 </tr>
                 <tr>
                     <td>Jan</td>
-                    <td>7</td>
+                    <td><input type="number" id="janbeta" size=5 value="6.5" class="cijfer" oninput="calculator()"></td>
                 </tr>
                 <tr>
                     <td>Kim Sing</td>
@@ -217,12 +217,16 @@
 function calculator() {
             var grade1 = parseFloat(document.getElementById('willem1').value);
             var grade2 = parseFloat(document.getElementById('willem2').value);
-            var totaal = grade1 + grade2;
-            document.getElementById("willembeta").value = totaal;
+            var totaalBeta1 = (grade1 + grade2) / 2;
+            document.getElementById("willembeta").value = totaalBeta1;
+
+            var grade3 = parseFloat(document.getElementById('jan1').value);
+            var grade4 = parseFloat(document.getElementById('jan2').value);
+            var totaalBeta2 = (grade3 + grade4) / 2;
+            document.getElementById("janbeta").value = totaalBeta2;
 
 
             var value = parseFloat(document.getElementById('willem1').value);
-      var bgclass = "normalbg";
       if ( value < 5.5) {
         document.getElementById('willem1').style.backgroundColor = "#ff807e";
       } else if ( value >= 5.5 && value < 7.5 ) {
@@ -230,7 +234,17 @@ function calculator() {
     } else if ( value >= 7.5) {
         document.getElementById('willem1').style.backgroundColor = "#00fb39";
       }
+
+      var value = parseFloat(document.getElementById('jan1').value);
+      if ( value < 5.5) {
+        document.getElementById('jan1').style.backgroundColor = "#ff807e";
+      } else if ( value >= 5.5 && value < 7.5 ) {
+        document.getElementById('jan1').style.backgroundColor = "#72fc84";
+    } else if ( value >= 7.5) {
+        document.getElementById('jan1').style.backgroundColor = "#00fb39";
+      }
 }
+calculator();
 
 
 
