@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        td, th {
+  border: 1px solid rgb(202, 202, 202);
+}
+        .vakken {
+            display: inline-table;
+            margin-left: 6em;
+            text-align: left;
+        }
+
+        .resultaat {
+            margin-top: 3em;
+            margin: 0 auto;
+            margin-left: 8em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="vakken">
+        <h2>Wiskunde</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Naam</th>
+                    <th>Cijfer</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Willem</td>
+                    <td><input type="number" id="willem1" size=20 value="3" class="cijfer" oninput="calculator()"></td>
+                </tr>
+                <tr>
+                    <td>Jan</td>
+                    <td><input type="number" id="jan1" size=20 value="7" class="cijfer" oninput="calculator()"></td>
+                </tr>
+                <tr>
+                    <td>Kim Sing</td>
+                    <td><input type="number" id="kimsing1" size=20 value="10" class="cijfer" oninput="calculator()"></td>
+                </tr>
+                <tr>
+                    <td>Samantha</td>
+                    <td><input type="number" id="samantha1" size=20 value="4" class="cijfer" oninput="calculator()"></td>
+                </tr>
+                <tr>
+                    <td>Joyce</td>
+                    <td><input type="number" id="joyce1" size=20 value="5.5" class="cijfer" oninput="calculator()"></td>
+                </tr>
+                <tr>
+                    <td>Gareth</td>
+                    <td><input type="number" id="gareth1" size=20 value="1" class="cijfer" oninput="calculator()"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="vakken">
+        <table>
+            <h2>Natuurkunde</h2>
+            <thead>
+                <tr>
+                    <th>Naam</th>
+                    <th>Cijfer</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Willem</td>
+                    <td><input type="number" id="willem2" size=20 value="7" class="cijfer" oninput="calculator()"></td>
+                </tr>
+                <tr>
+                    <td>Jan</td>
+                    <td><input type="number" id="jan2" size=20 value="5" class="cijfer" oninput="calculator()"></td>
+                </tr>
+                <tr>
+                    <td>Kim Sing</td>
+                    <td><input type="number" id="kimsing2" size=20 value="8" class="cijfer" oninput="calculator()"></td>
+                </tr>
+                <tr>
+                    <td>Samantha</td>
+                    <td><input type="number" id="samantha2" size=20 value="6" class="cijfer" oninput="calculator()"></td>
+                </tr>
+                <tr>
+                    <td>Joyce</td>
+                    <td><input type="number" id="joyce2" size=20 value="9" class="cijfer" oninput="calculator()"></td>
+                </tr>
+                <tr>
+                    <td>Gareth</td>
+                    <td><input type="number" id="gareth2" size=20 value="5.5" class="cijfer" oninput="calculator()"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="vakken">
+        <table>
+            <h2>Nederlands</h2>
+            <thead>
+                <tr>
+                    <th>Naam</th>
+                    <th>Cijfer</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Willem</td>
+                    <td><input type="number" id="willem3" size=20 value="7" class="cijfer" oninput="calculator()"></td>
+                </tr>
+                <tr>
+                    <td>Jan</td>
+                    <td><input type="number" id="jan3" size=20 value="7" class="cijfer" oninput="calculator()"></td>
+                </tr>
+                <tr>
+                    <td>Kim Sing</td>
+                    <td><input type="number" id="kimsing3" size=20 value="4" class="cijfer" oninput="calculator()"></td>
+                </tr>
+                <tr>
+                    <td>Samantha</td>
+                    <td><input type="number" id="samantha3" size=20 value="8" class="cijfer" oninput="calculator()"></td>
+                </tr>
+                <tr>
+                    <td>Joyce</td>
+                    <td><input type="number" id="joyce3" size=20 value="8.5" class="cijfer" oninput="calculator()"></td>
+                </tr>
+                <tr>
+                    <td>Gareth</td>
+                    <td><input type="number" id="gareth3" size=20 value="4" class="cijfer" oninput="calculator()"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="vakken">
+        <table>
+            <h2>Engels</h2>
+            <thead>
+                <tr>
+                    <th>Naam</th>
+                    <th>Cijfer</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Willem</td>
+                    <td><input type="number" id="willem4" size=20 value="6" class="cijfer" oninput="calculator()"></td>
+                </tr>
+                <tr>
+                    <td>Jan</td>
+                    <td><input type="number" id="jan4" size=20 value="6" class="cijfer" oninput="calculator()"></td>
+                </tr>
+                <tr>
+                    <td>Kim Sing</td>
+                    <td><input type="number" id="kimsing4" size=20 value="5.5" class="cijfer" oninput="calculator()"></td>
+                </tr>
+                <tr>
+                    <td>Samantha</td>
+                    <td><input type="number" id="samantha4" size=20 value="4.3" class="cijfer" oninput="calculator()"></td>
+                </tr>
+                <tr>
+                    <td>Joyce</td>
+                    <td><input type="number" id="joyce4" size=20 value="5.5" class="cijfer" oninput="calculator()"></td>
+                </tr>
+                <tr>
+                    <td>Gareth</td>
+                    <td><input type="number" id="gareth4" size=20 value="8" class="cijfer" oninput="calculator()"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br><br><br>
+    <div class="resultaat">
+        <table>
+            <h1>Resultaat gemiddeld</h1>
+            <thead>
+                <tr>
+                    <th>Naam</th>
+                    <th>Cijfer</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Willem</td>
+                    <td><input type="number" id="willembeta" size=5 value="6.5" class="cijfer" oninput="calculator()"></td>
+                </tr>
+                <tr>
+                    <td>Jan</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>Kim Sing</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Samantha</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Joyce</td>
+                    <td>5.5</td>
+                </tr>
+                <tr>
+                    <td>Gareth</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script type="text/javascript">
+
+function calculator() {
+            var grade1 = parseFloat(document.getElementById('willem1').value);
+            var grade2 = parseFloat(document.getElementById('willem2').value);
+            var totaal = grade1 + grade2;
+            document.getElementById("willembeta").value = totaal;
+
+
+            var value = parseFloat(document.getElementById('willem1').value);
+      var bgclass = "normalbg";
+      if ( value < 5.5) {
+        document.getElementById('willem1').style.backgroundColor = "#ff807e";
+      } else if ( value >= 5.5 && value < 7.5 ) {
+        document.getElementById('willem1').style.backgroundColor = "#72fc84";
+    } else if ( value >= 7.5) {
+        document.getElementById('willem1').style.backgroundColor = "#00fb39";
+      }
+}
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
+
