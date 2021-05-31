@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>Dit levert <code>Volvo</code> op, omdat door het aanroepen van <code>printCar()</code> in de global scope, daarmee ook <code>carBrand = "Volvo";</code> in de<br>
+    global scope gedefinieerd wordt.
+    <script>
+        function printCar() {
+            carBrand = "Volvo";
+            }
+            printCar();
+            console.log(carBrand);
+    </script>
+</body>
+</html>

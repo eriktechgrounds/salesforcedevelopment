@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Dit resulteert in <code>Uncaught ReferenceError: carBrand is not defined</code> omdat het block-scoping betreft. <br>
+    <code>console.log(carBrand);</code> wordt aangeroepen buiten de scope, dus <code>carBrand</code> kan niet worden bereikt.
+    <script>
+        function printCar() {
+            const carBrand = "Volvo";
+            }
+            console.log(carBrand);
+    </script>
+</body>
+</html>

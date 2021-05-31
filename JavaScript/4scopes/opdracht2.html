@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Hier word weer <code>Uncaught ReferenceError: carBrand is not defined</code> gelogd. Omdat de functie niet wordt aangeroepen<br>
+    word de declaration niet uitgevoerd.
+    <script>
+        let carName;
+ function printCar() {
+ carBrand = "Volvo";
+ }
+ console.log(carBrand);
+    </script>
+</body>
+</html>
