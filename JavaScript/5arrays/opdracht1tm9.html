@@ -10,6 +10,10 @@
     <script>
       //opdracht 1
       let randomNumbers = [6, 1, 4, 5, 5, 8, 9, 7, 3, 2];
+      console.log(randomNumbers);
+
+
+
       //opdracht 2
       let fruitTypes = [
         "Aardbei",
@@ -18,14 +22,70 @@
         "pineapple",
         "pomegranade",
       ];
-      //opdracht 3 zie console
-
-      //opdracht 4 zie console
-
-const randNum = randomNumbers[Math.floor(Math.random()*randomNumbers.length)];
+      console.log(fruitTypes);
 
 
-      console.log(randomNumbers, fruitTypes, fruitTypes[2],fruitTypes[0], randNum);
+
+      //opdracht 3
+      console.log(fruitTypes[2]);
+
+
+
+      //opdracht 4
+      console.log(fruitTypes[0]);
+
+
+
+      //opdracht 5
+      const randNum =
+        randomNumbers[Math.floor(Math.random() * randomNumbers.length)];
+      const randNumLimited = randNum % 5;
+      console.log(fruitTypes[randNumLimited]);
+
+
+
+      //opdracht 6
+      fruitTypes.push("pricklypear");
+      //Met push("waarde") word een item aan het eind van een array bijgevoegd.
+
+      fruitTypes.pop();
+      //Met pop() wordt de laatste waarde van een array verwijderd en teruggegeven.
+
+      fruitTypes.shift();
+      //Met shift() wordt de eerste waarde van een array verwijderd en teruggegeven.
+
+      fruitTypes.slice(1, 4);
+      //Met slice() word een deel van het array teruggegeven als nieuw array object. Dit begint bij de aangegeven 
+      //beginwaarde, en loopt tot (dus niet tot en met) de eindwaarde. De originele array blijft intact.
+
+      fruitTypes.splice(2, 5);
+      //Het zelfde als met slice(), alleen word de aangegeven reeks nu uit het originele array verwijderd.
+
+      fruitTypes.sort();
+      //Met sort() wordt een array gesorteerd. Zonder verdere argumenten zal deze de array in strings omzetten, en deze op alfabetische volgorde sorteren. 
+      //Bij het sorteren van nummers moet er dus van een comparison functie gebruikt gemaakt worden.
+
+
+
+      //opdracht 7
+      console.log(fruitTypes.length);
+      //Vanwege de voorgaande bewerkingen op fruitTypes is de fruitmand inmiddels geslonken tot 2 stuks
+      
+      
+      
+      //opdracht 8
+      fruitTypes.splice(0,1,"Sinaasappel")
+      //Vervangt pomelo met Sinaasappel.
+
+
+
+      //opdracht 9
+      let tmp = fruitTypes[1];
+      fruitTypes[1] = fruitTypes[0];
+      fruitTypes[0] = tmp;
+      console.log(fruitTypes);
+      //Bijvoorbeeld met een tijdelijke variabele.
+      
     </script>
   </body>
 </html>
